@@ -10,7 +10,7 @@ Builds for Windows Standalone and WebGL are automated with Github Actions and th
 
 Clone the project:
 ```
-git clone https://gitlab.com/GitGudStudioPrivate/gmtk2023.git
+git clone https://github.com/IncrediboldStudio/incredibold-unity3d-starter.git
 ```
 
 ## Acknowledgments
