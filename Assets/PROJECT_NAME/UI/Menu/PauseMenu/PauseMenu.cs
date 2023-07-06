@@ -17,13 +17,25 @@ public class PauseMenu : MonoBehaviour
         
     }
 
+    public void OpenMenu()
+    {
+        Time.timeScale = 0f;
+        gameObject.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void ResumeGame()
     {
+        Time.timeScale = 1f;
         gameObject.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void OpenOptions()
     {
+        // TODO
         print("Open options");
     }
 
@@ -32,9 +44,4 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-
-    public void ActivateUI()
-    {
-        
-    }
 }

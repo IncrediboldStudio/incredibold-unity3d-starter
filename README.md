@@ -12,6 +12,7 @@ Clone the project:
 ```
 git clone https://github.com/IncrediboldStudio/incredibold-unity3d-starter.git
 ```
+If you want more information on the project structure, you can go check out the [style guide](style-guide.md).
 
 ## Acknowledgments
 - [DOTween by Demigiant](http://dotween.demigiant.com/)
