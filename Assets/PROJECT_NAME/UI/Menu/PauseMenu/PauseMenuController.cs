@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenuController : Singleton<PauseMenuController>
 {
+    [SerializeField] List<GameObject> submenus;
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -21,27 +22,31 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 0f;
         gameObject.SetActive(true);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
     }
 
-    public void ResumeGame()
+    public void CloseMenu()
     {
         Time.timeScale = 1f;
         gameObject.SetActive(false);
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
-
-    public void OpenOptions()
+    public void OpenSubMenu(GameObject menuToOpen)
     {
-        // TODO
-        print("Open options");
+        foreach (GameObject submenu in submenus)
+        {
+            submenu.SetActive(false);
+        }
+        menuToOpen.SetActive(true);
     }
 
     public void ReturnToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        CloseMenu();
+        LoadingManager.Instance.ChangeScene("MainMenu");
+    }
+
+    public bool isOpen()
+    {
+        return gameObject.activeSelf;
     }
 
 }
