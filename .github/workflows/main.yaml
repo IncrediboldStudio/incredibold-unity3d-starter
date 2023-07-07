@@ -1,18 +1,57 @@
-name: BUILD
+name: Build & Deploy
 
 on: 
   push:
     branches:
-      - 'ci/**'
+      - 'releases/**'
   pull_request:
     branches:
       - main
-      - 'releases/**'
 
 jobs:
   build:
-    name: Build Unity
+    name: Build for ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform:
+          - StandaloneWindows64
+          - WebGL
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          lfs: true
+      - uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}
+          restore-keys: |
+            Library-${{ matrix.targetPlatform }}
+      - uses: game-ci/unity-builder@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          targetPlatform: ${{ matrix.targetPlatform }}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Build-${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}
+  
+  deploy:
+    name: Deploy to Netlify
+    needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: test script
-        run: echo Hello World! 
+      - name: Download WebGL build
+        uses: actions/download-artifact@v3
+        with:
+          name: Build-WebGL
+      - name: Deploy to Netlify Site
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=WebGL --prod
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
