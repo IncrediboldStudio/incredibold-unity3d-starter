@@ -32,19 +32,16 @@ public class LoadingManager : SingletonPersistant<LoadingManager>
 
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("LoadingScreen"));
 
-        print("1");
 
         //FadeIn loading screen
         //FadeInLoadingScreen(nbSecForFade);
         yield return new WaitForSeconds(nbSecForFade);
-        print("2");
         //Unload old scene
         AsyncOperation asyncTask = SceneManager.UnloadSceneAsync(oldScene);
         while (!asyncTask.isDone)
         {
             yield return null;
         }
-        print("3");
 
         //Load new scene
         asyncTask = SceneManager.LoadSceneAsync(newSceneToLoad, LoadSceneMode.Additive);
@@ -52,7 +49,6 @@ public class LoadingManager : SingletonPersistant<LoadingManager>
         {
             yield return null;
         }
-        print("4");
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(newSceneToLoad));
         
         //TODO temp fix because fade in/out busted
@@ -61,7 +57,6 @@ public class LoadingManager : SingletonPersistant<LoadingManager>
         {
             yield return null;
         }
-        print("5");
         //FadeOut loadingScreen
         //FadeOutLoadingScreen(nbSecForFade);
         yield break;
