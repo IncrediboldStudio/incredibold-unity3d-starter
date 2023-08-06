@@ -8,4 +8,8 @@
 
 ## Code Conventions
 
+### Code Styles
+
+### Namespaces
+
 ## Asset Naming Conventions
