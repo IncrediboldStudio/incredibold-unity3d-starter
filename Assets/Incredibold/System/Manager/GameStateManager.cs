@@ -1,22 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine;
-
-
-public sealed class GameStateManager : SingletonPersistant<GameStateManager>
+namespace Incredibold.Manager
 {
-    
-    // Start is called before the first frame update
-    void Start()
+    public sealed class GameStateManager : SingletonPersistant<GameStateManager>
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
 
