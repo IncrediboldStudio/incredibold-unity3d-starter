@@ -1,0 +1,20 @@
+VisualElement,
+Label,
+.unity-text-element,
+.unity-base-field,
+.unity-base-field__input {
+    font-size: 100%;
+    -unity-font-style: normal;
+}
+
+VisualElement, 
+Label, 
+.unity-text-element {
+    margin: 0;
+    padding: 0;
+}
+
+.unity-base-field,
+.unity-base-field__input {
+    margin: 0;
+}
