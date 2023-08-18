@@ -1,0 +1,38 @@
+:root {
+    --super-indie: url('project://database/Assets/UI%20Toolkit/Fonts/SuperIndie%20SDF.asset?fileID=11400000&guid=d71992ce5df989b4ca1b06509d6950e3&type=2#SuperIndie SDF');
+    --libre-franklin-regular: url('project://database/Assets/UI%20Toolkit/Fonts/LibreFranklin-Regular%20SDF.asset?fileID=11400000&guid=4d49f06318c945845afe70dfe7b46145&type=2#LibreFranklin-Regular SDF');
+    --libre-franklin-bold: url('project://database/Assets/UI%20Toolkit/Fonts/LibreFranklin-Bold%20SDF.asset?fileID=11400000&guid=f07aad8bd8c935a468adc0cdbdc0bc7a&type=2#LibreFranklin-Bold SDF');
+}
+
+Label,
+.unity-text-element,
+.unity-base-field__input {
+    font-size: 16px;
+    -unity-font-definition: var(--libre-franklin-regular);
+    -unity-font-style: normal;
+}
+
+.typography-display {
+    -unity-font-definition: var(--super-indie);
+    font-size: 57px;
+}
+
+.typography-headline {
+    -unity-font-definition: var(--super-indie);
+    font-size: 32px;
+}
+
+.typography-title {
+    -unity-font-definition: var(--libre-franklin-bold);
+    font-size: 22px;
+}
+
+.typography-label {
+    -unity-font-definition: var(--super-indie);
+    font-size: 14px;
+}
+
+.typography-body {
+    -unity-font-definition: var(--libre-franklin-regular);
+    font-size: 16px;
+}

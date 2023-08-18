@@ -1,0 +1,7 @@
+@import url("unity-theme://default");
+
+@import url("/Assets/UI Toolkit/Styles/Reset.uss");
+@import url("/Assets/UI Toolkit/Styles/Typography.uss");
+
+
+VisualElement {}
