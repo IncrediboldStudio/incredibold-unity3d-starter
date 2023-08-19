@@ -2,6 +2,8 @@
 
 @import url("/Assets/UI Toolkit/Styles/Reset.uss");
 @import url("/Assets/UI Toolkit/Styles/Typography.uss");
+@import url("/Assets/UI Toolkit/Styles/Colors.uss");
+
 
 
 VisualElement {}
