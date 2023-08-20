@@ -1,15 +1,23 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="typography" class="container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+    <ui:VisualElement class="container fluid" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+    </ui:VisualElement>
+    <ui:VisualElement name="typography" class="container">
         <ui:Label tabindex="-1" text="Display" display-tooltip-when-elided="true" name="display" class="typography-display" />
         <ui:Label tabindex="-1" text="Headline" display-tooltip-when-elided="true" name="headline" class="typography-headline" />
         <ui:Label tabindex="-1" text="Title" display-tooltip-when-elided="true" name="title" class="typography-title" />
         <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="Label" class="typography-label" />
         <ui:Label tabindex="-1" text="Body" display-tooltip-when-elided="true" name="body" class="typography-body" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" />
-        <ui:Toggle label="Toggle" />
-        <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" />
-        <ui:Slider picking-mode="Ignore" label="Slider" value="42" high-value="100" />
-        <ui:RadioButton label="Radio Button" />
+    </ui:VisualElement>
+    <ui:VisualElement name="fields" class="container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
         <ui:DropdownField label="Dropdown" index="-1" choices="System.Collections.Generic.List`1[System.String]" />
+        <ui:RadioButton label="Radio Button" />
+        <ui:Slider picking-mode="Ignore" label="Slider" value="42" high-value="100" />
+        <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" />
+        <ui:Toggle label="Toggle" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" />
+    </ui:VisualElement>
+    <ui:VisualElement class="container auto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
     </ui:VisualElement>
 </ui:UXML>

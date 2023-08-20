@@ -1,11 +1,7 @@
 @import url("unity-theme://default");
 
 @import url("/Assets/UI Toolkit/Styles/Reset.uss");
-@import url("/Assets/UI Toolkit/Styles/Typography.uss");
-@import url("/Assets/UI Toolkit/Styles/Colors.uss");
-@import url("/Assets/UI Toolkit/Styles/Layout.uss");
-
-
-
-
+@import url("/Assets/UI Toolkit/Styles/Theme/Colors.uss");
+@import url("/Assets/UI Toolkit/Styles/Theme/Typography.uss");
+@import url("/Assets/UI Toolkit/Styles/Layout/Container.uss");
 VisualElement {}

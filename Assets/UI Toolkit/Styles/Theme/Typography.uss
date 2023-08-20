@@ -4,12 +4,9 @@
     --libre-franklin-bold: url('project://database/Assets/UI%20Toolkit/Fonts/LibreFranklin-Bold%20SDF.asset?fileID=11400000&guid=f07aad8bd8c935a468adc0cdbdc0bc7a&type=2#LibreFranklin-Bold SDF');
 }
 
-Label,
-.unity-text-element,
-.unity-base-field__input {
-    font-size: 16px;
-    -unity-font-definition: var(--libre-franklin-regular);
-    -unity-font-style: normal;
+Button.unity-text-element {
+    -unity-font-definition: var(--super-indie);
+    font-size: 14px;
 }
 
 .typography-display {

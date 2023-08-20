@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1128px;
+    
+    border-color: red;
+    border-width: 1px;
+}
+
+.container.auto {
+    width: auto;
+    max-width: none;
+
+    border-color: blue;
+    border-width: 1px;
+}
+
+.container.fluid {
+    margin: 0;
+    max-width: none;
+
+    border-color: green;
+    border-width: 1px;
+}
