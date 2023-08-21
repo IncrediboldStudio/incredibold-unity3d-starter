@@ -3,5 +3,8 @@
 @import url("/Assets/UI Toolkit/Styles/Reset.uss");
 @import url("/Assets/UI Toolkit/Styles/Theme/Colors.uss");
 @import url("/Assets/UI Toolkit/Styles/Theme/Typography.uss");
+@import url("/Assets/UI Toolkit/Styles/Layout/Columns.uss");
 @import url("/Assets/UI Toolkit/Styles/Layout/Container.uss");
+
+
 VisualElement {}

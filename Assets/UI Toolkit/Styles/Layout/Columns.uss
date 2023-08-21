@@ -1,0 +1,85 @@
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 12px;
+    width: 100%;
+
+    border-color: yellow;
+    border-width: 1px;
+}
+.columns.is-centered {
+    justify-content: center;
+}
+
+.column {
+    display: initial;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 12px;
+
+    border-color: coral;
+    border-width: 1px;
+}
+
+.column.is-1 {
+    flex: none;
+    width: 8.33333%;
+}
+
+.column.is-2 {
+    flex: none;
+    width: 16.66666%;
+}
+
+.column.is-3 {
+    flex: none;
+    width: 25%;
+}
+
+.column.is-4 {
+    flex: none;
+    width: 33.33333%;
+}
+
+.column.is-5 {
+    flex: none;
+    width: 41.66667%;
+}
+
+.column.is-6 {
+    flex: none;
+    width: 50%;
+}
+
+.column.is-7 {
+    flex: none;
+    width: 58.33333%;
+}
+
+.column.is-8 {
+    flex: none;
+    width: 66.66667%;
+}
+
+.column.is-9 {
+    flex: none;
+    width: 75%;
+}
+
+.column.is-10 {
+    flex: none;
+    width: 83.33333%;
+}
+
+.column.is-11 {
+    flex: none;
+    width: 91.66667%;
+}
+
+.column.is-12 {
+    flex: none;
+    width: 100%;
+}
