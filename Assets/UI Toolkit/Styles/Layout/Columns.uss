@@ -2,15 +2,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 12px;
     width: 100%;
-
-    border-color: yellow;
-    border-width: 1px;
-}
-.columns.is-centered {
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .column {
@@ -19,9 +12,8 @@
     flex-grow: 1;
     flex-shrink: 1;
     padding: 12px;
-
-    border-color: coral;
-    border-width: 1px;
+    align-items: center;
+    justify-content: center;
 }
 
 .column.is-1 {
@@ -82,4 +74,75 @@
 .column.is-12 {
     flex: none;
     width: 100%;
+}
+
+.column.is-offset-1 {
+    flex: none;
+    margin-left: 8.33333%;
+}
+
+.column.is-offset-2 {
+    flex: none;
+    margin-left: 16.66666%;
+}
+
+.column.is-offset-3 {
+    flex: none;
+    margin-left: 25%;
+}
+
+.column.is-offset-4 {
+    flex: none;
+    margin-left: 33.33333%;
+}
+
+.column.is-offset-5 {
+    flex: none;
+    margin-left: 41.66667%;
+}
+
+.column.is-offset-6 {
+    flex: none;
+    margin-left: 50%;
+}
+
+.column.is-offset-7 {
+    flex: none;
+    margin-left: 58.33333%;
+}
+
+.column.is-offset-8 {
+    flex: none;
+    margin-left: 66.66667%;
+}
+
+.column.is-offset-9 {
+    flex: none;
+    margin-left: 75%;
+}
+
+.column.is-offset-10 {
+    flex: none;
+    margin-left: 83.33333%;
+}
+
+.column.is-offset-11 {
+    flex: none;
+    margin-left: 91.66667%;
+}
+
+.column.is-offset-12 {
+    flex: none;
+    margin-left: 100%;
+}
+
+.bg1 {
+    height: 30px;
+    width: 100%;
+    background-color: rgba(255,0,0,128);
+}
+.bg2 {
+    height: 30px;
+    width: 100%;
+    background-color: #c9c9c9;
 }

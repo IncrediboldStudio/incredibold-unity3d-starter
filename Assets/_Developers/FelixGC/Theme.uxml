@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="container-fluid" class="container fluid" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+    <ui:VisualElement name="container-fluid" class="container fluid">
         <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
     </ui:VisualElement>
     <ui:VisualElement name="typography" class="container">
@@ -9,7 +9,7 @@
         <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="Label" class="typography-label" />
         <ui:Label tabindex="-1" text="Body" display-tooltip-when-elided="true" name="body" class="typography-body" />
     </ui:VisualElement>
-    <ui:VisualElement name="fields" class="container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+    <ui:VisualElement name="fields" class="container">
         <ui:DropdownField label="Dropdown" index="-1" choices="System.Collections.Generic.List`1[System.String]" />
         <ui:RadioButton label="Radio Button" />
         <ui:Slider picking-mode="Ignore" label="Slider" value="42" high-value="100" />
@@ -17,34 +17,17 @@
         <ui:Toggle label="Toggle" />
         <ui:Button text="Button" display-tooltip-when-elided="true" />
     </ui:VisualElement>
-    <ui:VisualElement name="container-auto" class="container auto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
-    </ui:VisualElement>
-    <ui:VisualElement name="layout-columns" class="container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-        <ui:VisualElement name="columns-12" class="columns" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="column" class="column" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-        </ui:VisualElement>
-        <ui:VisualElement name="columns" class="columns" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-            <ui:VisualElement name="column-12" class="column is-12" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+    <ui:VisualElement name="layout-columns" class="container">
+        <ui:VisualElement name="columns" class="columns">
+            <ui:VisualElement name="column-12" class="column is-12">
                 <ui:Label tabindex="-1" text="Test" display-tooltip-when-elided="true" name="title" class="typography-title" />
                 <ui:Label tabindex="-1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi nulla, feugiat ut tellus a, semper dapibus lacus. Curabitur vitae mattis diam. Donec consequat lorem vel diam elementum fringilla. Morbi consectetur odio id dolor iaculis tristique. Aenean ac laoreet mauris, varius rutrum nulla. Vestibulum gravida ex at augue hendrerit, quis iaculis lectus condimentum. Mauris congue libero sed accumsan placerat. Nullam lectus tellus, elementum vitae mollis non, accumsan nec quam. Sed vehicula lacus vel lorem finibus, eget gravida turpis gravida. " display-tooltip-when-elided="true" name="body" />
             </ui:VisualElement>
-            <ui:VisualElement name="column-5" class="column is-5" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="column-5" class="column is-5">
                 <ui:Label tabindex="-1" text="Test" display-tooltip-when-elided="true" name="title" class="typography-title" />
                 <ui:Label tabindex="-1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi nulla, feugiat ut tellus a, semper dapibus lacus. Curabitur vitae mattis diam. Donec consequat lorem vel diam elementum fringilla. Morbi consectetur odio id dolor iaculis tristique. Aenean ac laoreet mauris, varius rutrum nulla. Vestibulum gravida ex at augue hendrerit, quis iaculis lectus condimentum. Mauris congue libero sed accumsan placerat. Nullam lectus tellus, elementum vitae mollis non, accumsan nec quam. Sed vehicula lacus vel lorem finibus, eget gravida turpis gravida. " display-tooltip-when-elided="true" name="body" />
             </ui:VisualElement>
-            <ui:VisualElement name="column-7" class="column is-7" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="column-7" class="column is-7">
                 <ui:Label tabindex="-1" text="Test" display-tooltip-when-elided="true" name="title" class="typography-title" />
                 <ui:Label tabindex="-1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi nulla, feugiat ut tellus a, semper dapibus lacus. Curabitur vitae mattis diam. Donec consequat lorem vel diam elementum fringilla. Morbi consectetur odio id dolor iaculis tristique. Aenean ac laoreet mauris, varius rutrum nulla. Vestibulum gravida ex at augue hendrerit, quis iaculis lectus condimentum. Mauris congue libero sed accumsan placerat. Nullam lectus tellus, elementum vitae mollis non, accumsan nec quam. Sed vehicula lacus vel lorem finibus, eget gravida turpis gravida. " display-tooltip-when-elided="true" name="body" />
             </ui:VisualElement>
