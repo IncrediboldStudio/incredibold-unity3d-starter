@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 2b6eeca6b2fc8cc428aed94e9c6aa6ff
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Libre Franklin
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b64b65b40238e474daad57a77f47a067, type: 3}
+  - {fileID: 12800000, guid: c9138866d52ed9b49b07db4cddd99b41, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

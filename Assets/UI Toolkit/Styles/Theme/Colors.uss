@@ -1,0 +1,91 @@
+:root {
+    --primary: #ff0000;
+    --on-primary: #ffffff;
+    
+    --secondary: #00ff00;
+    --on-secondary: #000000;
+
+    --tertiary: #0000ff;
+    --on-tertiary: #ffffff;
+
+    --background: #ffff00;
+    --on-background: #000000;
+
+    --surface: #00ffff;
+    --on-surface: #000000;
+}
+
+/*Primary*/
+.color-primary {
+    color: var(--primary);
+}
+.background-primary {
+    background-color: var(--primary);
+}
+/*On Primary*/
+.color-on-primary {
+    color: var(--on-primary);
+}
+.background-on-primary {
+    background-color: var(--on-primary);
+}
+
+/*Secondary*/
+.color-secondary {
+    color: var(--secondary);
+}
+.background-secondary {
+    background-color: var(--secondary);
+}
+/*On Secondary*/
+.color-on-secondary {
+    color: var(--on-secondary);
+}
+.background-on-secondary {
+    background-color: var(--on-secondary);
+}
+
+/*Tertiary*/
+.color-tertiary {
+    color: var(--tertiary);
+}
+.background-tertiary {
+    background-color: var(--tertiary);
+}
+/*On Tertiary*/
+.color-on-tertiary {
+    color: var(--on-tertiary);
+}
+.background-on-tertiary {
+    background-color: var(--on-tertiary);
+}
+
+/*Background*/
+.color-background {
+    color: var(--background);
+}
+.background-background {
+    background-color: var(--background);
+}
+/*On Background*/
+.color-on-background {
+    color: var(--on-background);
+}
+.background-on-background {
+    background-color: var(--on-background);
+}
+
+/*Surface*/
+.color-surface {
+    color: var(--surface);
+}
+.background-surface {
+    background-color: var(--surface);
+}
+/*On Surface*/
+.color-on-surface {
+    color: var(--on-surface);
+}
+.background-on-surface {
+    background-color: var(--on-surface);
+}

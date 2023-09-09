@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1128px;
+    flex-wrap: wrap;
+}
+
+.container.auto {
+    width: auto;
+    max-width: none;
+}
+
+.container.fluid {
+    margin: 0;
+    max-width: none;
+}

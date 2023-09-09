@@ -2,7 +2,7 @@
 
 This is a starter template for Unity 3D and URP.
 
-Builds for Windows Standalone and WebGL are automated with Github Actions and the WebGL version is deployed on Github pages.
+Builds for Windows Standalone and WebGL are automated with Github Actions and the WebGL version is deployed on Netlify.
 
 ## Prerequisites
 
@@ -16,15 +16,20 @@ Clone the project:
 git clone https://github.com/IncrediboldStudio/incredibold-unity3d-starter.git
 
 ```
+Or with SSH:
+```
+
+git clone git@github.com:IncrediboldStudio/incredibold-unity3d-starter.git
+
+```
 If you want more information on the project structure, you can go check out the [style guide](docs/style-guide.md).
 
 ### Basic setup for your own project
 
-This project is setup
-
 ## CI/CD
 
-This template uses [Github Actions](https://docs.github.com/en/actions) upload builds for Windows x64 Standalone and WebGL. The WebGL build gets deployed on [Netlify](https://www.netlify.com/).
+This template uses [Github Actions](https://docs.github.com/en/actions) to upload builds for Windows x64 Standalone and WebGL. The WebGL build can optionally be deployed on [Netlify](https://www.netlify.com/).
+
 If you want more information on the workflow and setup for your own repository, refer to the [CI/CD](docs/ci.md) page.
 
 ## Acknowledgments
